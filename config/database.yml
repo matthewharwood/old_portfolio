@@ -51,5 +51,5 @@ production:
   encoding: unicode
   database: morningharwood_production
   pool: 5
-  username: watashi
+  username: deployer
   password: Scooter12
