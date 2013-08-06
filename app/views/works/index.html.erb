@@ -1,0 +1,35 @@
+<nav class="routes">
+  <h1 class="navi-icon"></h1>
+  <ul>
+    <li ><a class="active" href="">works<span></span></a></li>
+    <li><a href="">about<span></span></a></li>
+    <li><a href="">contact<span></span></a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+  <nav class="meny">
+
+        <h1>Works</h1>
+        <h2>Check out some of my work</h2>
+      <% @works.each do |work| %>
+        <ol class="meny-control"> 
+          <li><a href=""><%= work.name %></a></li>
+        </ol>
+      <% end %>
+  </nav>
+  <article class="preview">
+    <figure class="featured-img">
+      <img src="http://placekitten.com/1200/1100">
+    </figure>
+
+      <header class="featured-info">
+        <h1>Potential Apparel</h1>
+        <p>acompany whose goal is to create a new way for people to give to charitable organizations that empower the next generation.</p>
+        <a class="enter" href="#"><span></span>View Project</a>
+      </header>
+
+  </article>
+</div>
+
+<div class="modal-bg"></div>

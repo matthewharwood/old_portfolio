@@ -1,0 +1,27 @@
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>
+<p id="notice"><%= notice %></p>
+<article>
+<figure class="show-img">
+	<img src="http://placekitten.com/1900/900">
+</figure>
+	<div class="container">
+		<div class="main">
+			<header>
+				<hgroup class="modal-info">
+					<h1><%= @work.name %><h1>
+					<h2><%= @work.description %></h2>
+				</hgroup>
+			</header>
+
+			<div class="post">
+				<h3>lorem title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tenetur perspiciatis quos ipsam earum dolore asperiores ad at. Quae, ullam labore rerum quas veritatis magni est nemo optio earum tempore!</p>
+	      	</div>
+      	<div>
+	    <aside class="sidebar">
+
+	    </aside>
+	<p><%= @work.post %></p>
+	</div>
+</article>

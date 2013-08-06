@@ -1,0 +1,138 @@
+@import "_var.css.scss";
+* 
+  {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    position: relative;
+    vertical-align: middle;
+
+  }
+
+.container
+  {
+    @extend .group;
+    margin: 0 7.5rem 0 7.5rem;
+    height: 100%;
+    min-height: 480px;
+  }
+
+.wrapper
+  {
+    @extend .group;
+    margin: 0 0 0 7.5rem;
+    height: 100%;
+    min-height: 480px;
+  }
+  
+.page-container
+  {
+    position: relative;
+    height: 100%;
+    overflow:auto;
+  }
+
+
+.routes
+  {
+    position: fixed;
+    z-index:100;
+    padding:0 2.25rem;
+    text-transform: uppercase;
+    font-style: italic;
+
+  .navi-icon
+    {
+      position: absolute;
+      background: #f26645;
+      top: 0;
+      left: 0;
+      bottom: -1rem;
+      width: 4.5rem;
+      margin: 0;
+    }
+
+  li
+    {
+      margin-left: 1.5rem;
+
+    &:last-child a:after
+      {
+          content: "  ";
+          color: $black;
+          position: absolute;
+          right:-1rem;
+      }
+
+      a
+        {
+          text-decoration: none;
+          color: $black;
+        
+        &:hover
+          {
+            color: #555;
+          }
+
+        &:after
+          {
+            content: " / ";
+            color: $black;
+            position: absolute;
+            right:-1rem;
+
+          }       
+
+        &.active
+          {
+            border-bottom:1px $red solid;
+          }
+
+        }
+
+    }
+
+  }
+
+.block 
+  {
+    text-align: left;
+    height: 100%;
+  }
+   
+
+.block:before 
+  {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; 
+  }
+
+
+.centered 
+  {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 85%;
+  }
+
+.retro
+  {
+    float: left;  
+    height: 100%;
+  }
+
+.reset
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
