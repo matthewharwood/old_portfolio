@@ -9,6 +9,10 @@
 		{
 			display: inline-block;
 		}
+	&.blank
+		{
+			background: none;
+		}
 	}
 
 .meny
@@ -147,6 +151,7 @@
 			font-size: 6.875rem;
 			margin: 0;
 			text-transform: capitalize;
+			min-width: 100%;
 		}
 	p
 		{
@@ -176,14 +181,23 @@
 
 //modal
 
-.modal{
+.modal-bg{
 	background:#ccc;
 	position:absolute;
-	top:0;
 	bottom:0;
 	left:0;
 	right:0;
 	z-index: 101;
 	display:none;
 	visibility:hidden;
+	height:1px;
+
+	&.on 
+		{
+			display: block !important;
+			visibility: visible !important;
+			height:100%;
+			top:0;
+		}
 }
+

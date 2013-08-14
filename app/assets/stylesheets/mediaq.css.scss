@@ -30,7 +30,7 @@ and (max-width : 1780px) {
 
 @media only screen 
 and (max-width : 1600px) {
-	.intro, .myself
+	.intro, .myself, .reverse
 			{
 
 			h1, h2, h3
@@ -73,8 +73,79 @@ and (max-width : 1600px) {
 					line-height: 2.15rem;
 				}
 		}
+
+//about
+	.spending-time
+		  {
+
+		    top: -25rem;
+		    
+		    h1, h2, h3
+		     {
+		        margin:0;
+		        line-height:1;
+		        font-size: 8rem;
+		     }
+
+		     h2
+		      {
+		        font-size: 12.25em;
+		      }
+
+		    h3
+		      {
+		        font-size: 8rem;
+		      }
+
+		    span
+		      {
+		        font-size: 2.5rem;
+		        font-style: italic;
+		      }
+		  }
 }
 
+@media only screen 
+and (max-width : 1441px) {
+	.intro, .myself, .reverse
+		{
+
+		h1, h2, h3
+			{
+				font-size: 3.5rem; //72px		
+			}
+		}
+
+	.spending-time
+		  {
+
+		    top: -20rem;
+		    
+		    h1, h2, h3
+		     {
+		        margin:0;
+		        line-height:1;
+		        font-size: 6rem;
+		     }
+
+		     h2
+		      {
+		        font-size: 9.25em;
+		      }
+
+		    h3
+		      {
+		        font-size: 5.58rem;
+		      }
+
+		    span
+		      {
+		        font-size: 2.5rem;
+		        font-style: italic;
+		      }
+		  }
+
+}
 @media only screen 
 and (max-width : 1281px) {
 	.container
@@ -92,9 +163,8 @@ and (max-width : 1281px) {
 	    	min-height: 480px;
 	  	}
 
-	.intro, .myself
+	.intro, .myself, .reverse
 		{
-
 
 
 		h1, h2, h3
@@ -242,6 +312,48 @@ and (max-width : 1281px) {
 		{
 			padding: 6.5rem 4.5rem 4.5rem 4.5rem;
 		}
+
+	//about
+	intro, .myself, .reverse
+		{
+
+
+		h1, h2, h3
+			{
+				
+				font-size: 3rem; //48px
+				
+			}
+
+		}
+	.spending-time
+		  {
+
+		    top: -20rem;
+		    
+		    h1, h2, h3
+		     {
+		        margin:0;
+		        line-height:1;
+		        font-size: 6rem;
+		     }
+
+		     h2
+		      {
+		        font-size: 9.25em;
+		      }
+
+		    h3
+		      {
+		        font-size: 5.58rem;
+		      }
+
+		    span
+		      {
+		        font-size: 2.5rem;
+		        font-style: italic;
+		      }
+		  }
 }
 
 @media only screen 
@@ -257,7 +369,7 @@ and (max-width : 1025px) {
 			min-height: 480px;
 		}
 
-	.intro, .myself
+	.intro, .myself, .reverse
 		{
 
 
@@ -405,4 +517,44 @@ and (max-width : 1025px) {
 					font-size: 0.875rem;
 				}
 		}
+
+//about
+		.myself
+			{
+				padding: 4rem 1rem 0rem 1rem;
+			}
+
+		.reverse
+			{
+				padding: 6rem 1rem 10rem 1rem;
+			}
+	
+		.spending-time
+		  {
+
+		    top: -14rem;
+		    
+		    h1, h2, h3
+		     {
+		        margin:0;
+		        line-height:1;
+		        font-size: 5rem;
+		     }
+
+		     h2
+		      {
+		        font-size: 7.7rem;
+		      }
+
+		    h3
+		      {
+		        font-size: 4.66rem;
+		      }
+
+		    span
+		      {
+		        font-size: 2rem;
+		        font-style: italic;
+		      }
+		  }
 }

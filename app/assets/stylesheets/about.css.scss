@@ -9,25 +9,92 @@
 //background css
 .myself
 	{
-		padding: 4.5rem;
+		padding: 6rem;
 
-		h1,h2,h3{font-family: 'Merriweather', serif; margin: 0; font-size: 4.5rem; color: #fff;}
+		h1,h2,h3{font-family: 'Merriweather', serif; margin: 0; font-size: 4.5rem; color: $red;}
 	}
 
 .bg
   {
     width: 100%;
     height: 100%;
-   
-  background: 
-    linear-gradient(-31deg, transparent 50%, $blue 50%) no-repeat  0 0;
+    background: 
+    linear-gradient(-31deg, transparent 50%, $red 50%) no-repeat  0 0;
     background-size: 100% 100%;
 
+
 }
+
+.bg.footer
+  {
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(-31deg, $red 50%, $red 50%) no-repeat  0 0;
+    background-size: 100% 100%;
+
+    h1
+      {
+        width: 125px;
+        text-align: center;
+        border-top: 1px solid #333;
+        margin:0 auto;
+      }
+}
+
+.about-hero
+  {
+    background: 
+      linear-gradient(-31deg, $red 50%, #fff 50%) no-repeat  0 0;
+      background-size: 100% 100%;
+      padding-top:2rem;
+      p
+        {
+        
+        width: 125px;
+        text-align: center;
+        border-top: 1px solid #333;
+        margin:2rem auto;
+        color: #333;
+
+        }
+  }   
+  .reverse
+    {
+      padding: 6rem 6rem 21rem 6rem;
+      
+      h1,h2,h3{
+        font-family: 'Merriweather', serif; margin: 0; font-size: 4.5rem; color: #fff;
+        text-align: left;
+        direction: rtl; 
+        -webkit-transform:rotateY(180deg);
+        -moz-transform:rotateY(180deg);
+        -o-transform:rotateY(180deg);
+        -ms-transform:rotateY(180deg);
+        unicode-bidi: bidi-override;
+      }
+      h3 span
+        {
+          border-bottom: 1px dotted #fff;
+        }
+
+      h3:hover span 
+        {
+          text-align: right;
+          direction: ltr; 
+          unicode-bidi: bidi-override;
+          display: inline-block;
+          cursor: pointer;
+        }
+
+
+    }
+
+
 .inverse
   {
     background:
-    linear-gradient(-31deg, $blue 50%, transparent 50%) no-repeat  0 0;
+    linear-gradient(-31deg, $red 50%, transparent 50%) no-repeat  0 0;
   }
 
 //end background css
@@ -39,7 +106,7 @@
 .hover-spell
   {
     cursor: pointer;
-    border-bottom: 1px dotted lighten($blue, 33%);
+    border-bottom: 1px dotted $red;
     transition: all 0.5s ease;
   }
 
@@ -49,3 +116,36 @@
     unicode-bidi: bidi-override;
   }
 
+.spending-time
+  {
+    text-align: right;
+    padding: 0 7.5rem 0 0;
+    top: -30rem;
+    
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+    h1, h2, h3
+     {
+        margin:0;
+        line-height:1;
+        font-size: 10rem;
+     }
+
+     h2
+      {
+        font-size: 15.45rem;
+      }
+
+    h3
+      {
+        font-size: 10.15rem;
+      }
+
+    span
+      {
+        font-size: 3rem;
+        font-style: italic;
+      }
+  }

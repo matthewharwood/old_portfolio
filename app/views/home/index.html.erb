@@ -1,3 +1,4 @@
+
 <div class="page-container home">
 	<section class="container">
 		<div class="block">
@@ -14,9 +15,9 @@
 		        <nav class="intro-control">
 		        	<h3>A digital space about:</h3>
 			        <ul>
+			        	<%= link_to "<li><span></span><b>work</b><i></i></li>".html_safe, works_path %>
 			        	
-			        	<li>work</li>
-			        	<li>me</li>
+			        	<%= link_to "<li><span></span><b>me</b><i></i></li>".html_safe, about_path %>
 			        </ul>
 		    	</nav>
 	    	</div>
