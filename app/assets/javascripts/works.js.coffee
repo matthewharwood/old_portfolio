@@ -76,7 +76,7 @@ $(document).ready ->
 		#$(".modal-bg").addClass "animated fadeOutDownBig"  this works! but needs latency
 		$(modalClose).removeClass "on"
 		$(modalBg).removeClass "on animated fadeInUpBig"
-
+		$(meny).find(".active").addClass "visited"
 
 
 	
@@ -96,6 +96,7 @@ $(document).ready ->
 
 		unless hasActive
 			toggleActive  $(enter), $(this)
+
 			createModal()
 
 

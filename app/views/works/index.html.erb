@@ -21,7 +21,7 @@
     <ol class="meny-control"> 
       <% @works.each do |work| %>
         
-          <li class="" data-id="<%= work.id %>"><a href="#<%= work.name.gsub(/\s+/, "").downcase %>"><%= work.name %></a></li>
+          <li class="" data-id="<%= work.id %>"><a href="#"><%= work.name %></a></li>
 
       <% end %>
     </ol>

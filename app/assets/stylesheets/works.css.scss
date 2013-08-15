@@ -94,6 +94,18 @@
 
 		}
 
+	& .visited
+		{
+	
+			color: #ccc !important;
+
+
+			a
+				{
+					text-decoration: line-through !important; 
+					color:#ccc !important;
+				}
+		}
 	.active
 		{
 			position:relative;
@@ -181,44 +193,5 @@
 
 	}
 
-//modal
-.modal-controls
-	{
-		position: fixed;
-		background: #333;
-		height: 100px;
-		width: 100px;
-		top: 0;
-		right: 0;
-		z-index: 201;
-		display: none;
-		visibility: hidden;
 
-		&.on 
-			{
-				display: block !important;
-				visibility: visible !important;
-			}
-	}
-
-.modal-bg{
-	background:#fff;
-	position:absolute;
-	bottom:0;
-	left:0;
-	right:0;
-	z-index: 101;
-	display:none;
-	visibility:hidden;
-	height:1px;
-	
-
-	&.on 
-		{
-			display: block !important;
-			visibility: visible !important;
-			height:100%;
-			top:0;
-		}
-}
 
