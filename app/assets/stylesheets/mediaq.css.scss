@@ -433,6 +433,8 @@ and (max-width : 1025px) {
 			margin-right: 0; //72px
 			padding: 2.25rem 4.5rem; //36px 72px
 			text-align: center;
+			width: 100%;
+			max-width: none;
 		h1
 			{
 				font-size: 3rem;

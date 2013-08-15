@@ -76,7 +76,7 @@
 		&:hover
 				{
 					color: #888;
-
+					background: #fbfbfb;
 				a
 					{
 						color: #888;
@@ -97,7 +97,7 @@
 	.active
 		{
 			position:relative;
-			background-color: #f7f7f7;
+			background-color: #f7f7f7 !important;
 			color: #333 !important;
 			border-left: 5px solid #f26645;
 			
@@ -144,6 +144,8 @@
 		font-style: italic;
 		margin-right: 4.5rem; //72px
 		padding: 2.25rem 4.5rem; //36px 72px
+		min-width:80%;
+		max-width:94%;
 		
 
 	h1
@@ -182,7 +184,7 @@
 //modal
 
 .modal-bg{
-	background:#ccc;
+	background:#fff;
 	position:absolute;
 	bottom:0;
 	left:0;

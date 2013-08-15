@@ -6,14 +6,18 @@ featuredTitleWrapper = " "
 featuredSubtitleWrapper = " "
 menyFirst = " "
 menyFirstId = " "
-
+featuredImgElement = " "
 
 window.onload = ->
 	menyFirst = $('.meny-control li:first-child')
 	menyFirstId = menyFirst.data("id")
 	featuredTitleWrapper = $(".featured-info h1")
+	featuredImgElement = $(".featured-img img")
 	featuredSubtitleWrapper = $(".featured-info p")
+	featuredTitleWrapper.addClass "fadeInLeft"
+	featuredSubtitleWrapper.addClass "fadeInLeft"
 
+	featuredImgElement.hide().fadeIn(1500)
 	#adds active styles to first list-item in meny
 	$(menyFirst).addClass('active')
 	featuredImgWrapper = $(".featured-img")
@@ -37,7 +41,10 @@ $(document).ready ->
 
 	#creates the bg and panel of modal
 	createModal = () ->
+		#animate css solution
 		$(".modal-bg").removeClass("animated fadeInUpBig").addClass "on animated fadeInUpBig"
+		#$(".show-img").html(featuredImg)
+		console.log($(featuredTitle))
 
 	#click set modal
 	$(enter).on "click", (event) ->
@@ -49,6 +56,8 @@ $(document).ready ->
 			createModal()
 
 
+
+
 	#click to get id	
 	$(meny).on "click.grabId", "li", (event) ->
 		event.stopPropagation();
@@ -56,12 +65,16 @@ $(document).ready ->
 		projectId = $(this).data("id")
 
 		if hasActive
-			$(enter).removeClass("animated pulse").addClass "animated pulse"
+			#animate css solution
+			$(enter).addClass "pulse"
+			newone = $(enter).clone(true)
+			$(enter).before newone
+			$("." + enter.attr("class") + ":first-child").remove()
 
 		else
 			toggleActive  $(meny), $(this)
 			getProject projectId
-			console.log projectId
+			
 					
 
 		
@@ -81,11 +94,12 @@ $(document).ready ->
 	    featuredSubTitle = $(data).find('.modal-info h2').html()
 	    featuredpost = $(data).find('.post').html()
 
-	    $(featuredImgWrapper).hide().html(featuredImg).fadeIn()
+	    $(featuredImgWrapper).hide().html(featuredImg).fadeIn(1500)
 	    $(featuredTitleWrapper).hide().html(featuredTitle).fadeIn()
 	    $(featuredSubtitleWrapper).hide().html(featuredSubTitle).fadeIn()
 
+    	
 
 
-	    console.log featuredImg
+	    #console.log featuredImg
 	   
