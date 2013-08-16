@@ -103,6 +103,19 @@ and (max-width : 1600px) {
 		        font-style: italic;
 		      }
 		  }
+	.main
+	
+		{
+
+		figcaption
+			{
+				margin:0;
+				padding:0;
+
+			h3, p{padding-left:2.25rem;}
+
+			}
+		}
 }
 
 @media only screen 
@@ -144,6 +157,7 @@ and (max-width : 1441px) {
 		        font-style: italic;
 		      }
 		  }
+
 
 }
 @media only screen 
@@ -188,11 +202,15 @@ and (max-width : 1281px) {
 				{
 					bottom: -.875rem;
 					width: 3.5rem;
+
+				 span 
+				 	{
+						font-size: 32px;
+						top: 7px;
+				 	}
 				}
 		}
-
-	//works page
-
+	
 	.meny
 		{
 			@extend .retro;
@@ -235,13 +253,16 @@ and (max-width : 1281px) {
 	  	
 		font-size: 1rem;
 
+
 		li
 			{
 				margin: .5rem 0;
 				
 			}
-	  }
 
+		
+	  }
+		
 	.featured-info
 		{
 
@@ -307,10 +328,29 @@ and (max-width : 1281px) {
 					}
 				}
 		}
+		
+	.modal-controls
+		{
+
+			width: 62px;
+			height: 62px;
+
+		&:after 
+			{
+				position: absolute;
+				font-family: "Lucida Sans Unicode";
+				right: 0;
+				top: 0;
+				width: 62px;
+				height: 62px;
+				color: #fff;
+				font-size: 55px;
+			}
+		}
 
 	.post
 		{
-			padding: 6.5rem 4.5rem 4.5rem 4.5rem;
+			padding: 0rem 4.5rem 4.5rem 4.5rem;
 		}
 
 	//about
@@ -354,6 +394,25 @@ and (max-width : 1281px) {
 		        font-style: italic;
 		      }
 		  }
+
+		//show
+	.main
+		{
+
+
+			h1,h2,h3,h4,
+				{
+					padding:0;
+					margin: 1rem 0;
+				}
+
+			p
+				{
+					
+				margin:0;
+
+				}
+		}
 }
 
 @media only screen 
@@ -471,14 +530,9 @@ and (max-width : 1025px) {
 		}
 
 	
-	//show
-	.main{
-		header
-			{
-				padding: 2.25rem;
-			
-			}
-	}
+
+
+
 	.modal-info
 		{
 			h1
@@ -509,7 +563,7 @@ and (max-width : 1025px) {
 
 	.post
 		{
-			padding: 3.5rem 2.25rem 2.25rem 2.25rem;
+			padding: 0rem 2.25rem 2.25rem 2.25rem;
 			h3
 				{
 					font-size: 1rem;
@@ -520,6 +574,55 @@ and (max-width : 1025px) {
 				}
 		}
 
+//show
+	.main
+		{
+			width: 100%;
+
+			header
+				{
+					padding: 2.25rem;
+					top:0;
+					
+				}
+			figcaption
+				{
+					margin:0;
+					padding:0;
+				h3
+					{
+						padding-top: 1rem
+					}
+				h3, p{padding-left:0rem;}
+					
+				&:before
+					{
+						top: -68px;
+						left: -7px;
+					}
+				}
+
+			h1,h2,h3,h4,
+				{
+					padding:0;
+					margin: 1rem 0;
+				}
+
+			p
+				{
+					
+					margin:0;
+				&:first-letter
+					{
+						text-transform:capitalize;
+					}
+				}
+		}
+	.sidebar
+		{
+			display: none;
+			visibility: hidden;
+		}
 //about
 		.myself
 			{
