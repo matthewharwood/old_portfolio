@@ -5,6 +5,7 @@ Morningharwood::Application.routes.draw do
   root :to => 'home#index'
   get "home/index"
   match 'about' => 'home#about', as: 'about'
+  match 'contact' => 'home#contact', as: 'contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
