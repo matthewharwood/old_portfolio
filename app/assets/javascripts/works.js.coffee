@@ -149,4 +149,15 @@ $(document).ready ->
 
 
 	    #console.log featuredImg
-	   
+#about
+	timer = $(".countdown")
+	hours = 10001
+
+	countdown = ->	
+	    hours--
+	    $(timer).html hours
+	    setTimeout countdown, 1500
+	$ ->
+	  countdown()
+
+

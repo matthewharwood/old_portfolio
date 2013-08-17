@@ -18,7 +18,7 @@
     border-top: 50px #fff solid;
     border-bottom: 50px #fff solid;
     width: 50%;
-    height: 72%;
+    height: 800px;
 
     h1
       {
@@ -30,11 +30,12 @@
 
       } 
 
-    span
+  span
       {
         position: absolute;
         font-size: 4rem;
-        bottom: 18%;
+        bottom: 2%;
+        color: #fff;
       }
   }
 
@@ -43,11 +44,94 @@
     height: 100%;
       background-size: 100% 100%;
   }
+.resume
+  {
+    position: absolute;
+    top: 144px;
+    left: 110px;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    width: 38%;
+    z-index: 9999;
+    
+    h1
+      {
+        font-size: 72px;
+        margin: 0;
+        line-height: 1;
+      }
+
+    h2
+      {
+        margin: 0;
+      
+      &:before
+        {
+          content: " ";
+          bottom: -36px;
+          left: 0;
+          width: 120px;
+          height: 1px;
+          background: $black;
+          position: absolute;
+        }
+      }
+
+    h3
+      {
+        margin-top: 120px;
+        margin-bottom: 72px;
+        font-size: 24px;
+
+        &:before
+          {
+            content: " ";
+            bottom: -16px;
+            left: 0;
+            width: 36px;
+            height: 1px;
+            background: $black;
+            position: absolute;
+          }
+      }
+
+    h4
+      {
+        font-size:16px;
+        margin: 4px 0;
+      }
+
+    h5
+      {
+        font-size: 16px;
+        color: #fff;
+        margin: 4px 0;
+      }
+
+    p
+      {
+        text-align: justify;
+        padding-right: 24px;
+        margin-bottom: 72px;
+      }
+    .edu
+      {
+        padding: 0 172px 0 0;
+
+        .red
+          {
+            color:$red;
+            background:#fff;
+            display:inline-block;
+          }
+      }
+
+  }
 
 .redbleed
   {
     background: $red;
-    z-index: 100;
+    z-index: 102;
   }
 
 .halfbleed
@@ -56,11 +140,13 @@
             linear-gradient(31deg, #fff 50%, $red 50%) no-repeat  0 0;
             z-index: 101;
   }
+
 .whitebleed
   {
     background: #fff;
     z-index: 100;
   }
+
 .myself
 	{
 		padding: 6rem;
@@ -114,36 +200,3 @@
     unicode-bidi: bidi-override;
   }
 
-.spending-time
-  {
-    text-align: right;
-    padding: 0 7.5rem 0 0;
-    top: -30rem;
-    
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-
-    h1, h2, h3
-     {
-        margin:0;
-        line-height:1;
-        font-size: 10rem;
-     }
-
-     h2
-      {
-        font-size: 15.45rem;
-      }
-
-    h3
-      {
-        font-size: 10.15rem;
-      }
-
-    span
-      {
-        font-size: 3rem;
-        font-style: italic;
-      }
-  }

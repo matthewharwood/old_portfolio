@@ -36,7 +36,7 @@ and (max-width : 1600px) {
 			h1, h2, h3
 				{
 
-					font-size: 5.5rem; //72px
+					font-size: 4.5rem; //72px
 
 					
 				}
@@ -73,36 +73,16 @@ and (max-width : 1600px) {
 					line-height: 2.15rem;
 				}
 		}
-
 //about
-	.spending-time
-		  {
+	.resume
+	  	{
 
-		    top: -25rem;
-		    
-		    h1, h2, h3
-		     {
-		        margin:0;
-		        line-height:1;
-		        font-size: 8rem;
-		     }
+		    width: 46%;
 
-		     h2
-		      {
-		        font-size: 12.25em;
-		      }
+		}
 
-		    h3
-		      {
-		        font-size: 8rem;
-		      }
-
-		    span
-		      {
-		        font-size: 2.5rem;
-		        font-style: italic;
-		      }
-		  }
+//show
+	
 	.main
 	
 		{
@@ -120,6 +100,7 @@ and (max-width : 1600px) {
 
 @media only screen 
 and (max-width : 1441px) {
+//about
 	.intro, .myself, .reverse
 		{
 
@@ -128,36 +109,19 @@ and (max-width : 1441px) {
 				font-size: 3.5rem; //72px		
 			}
 		}
+	.about
+		{
+			font-size: 72px;
+		}
+	.resume
+	  	{
 
-	.spending-time
-		  {
-
-		    top: -20rem;
-		    
-		    h1, h2, h3
-		     {
-		        margin:0;
-		        line-height:1;
-		        font-size: 6rem;
-		     }
-
-		     h2
-		      {
-		        font-size: 9.25em;
-		      }
-
-		    h3
-		      {
-		        font-size: 5.58rem;
-		      }
-
-		    span
-		      {
-		        font-size: 2.5rem;
-		        font-style: italic;
-		      }
-		  }
-
+		    width: 46%;
+			h1
+				{
+					font-size:62px;
+				}
+		}
 
 }
 @media only screen 
@@ -354,7 +318,7 @@ and (max-width : 1281px) {
 		}
 
 	//about
-	intro, .myself, .reverse
+	.intro, .myself, .reverse
 		{
 
 
@@ -366,35 +330,28 @@ and (max-width : 1281px) {
 			}
 
 		}
-	.spending-time
-		  {
 
-		    top: -20rem;
-		    
-		    h1, h2, h3
-		     {
-		        margin:0;
-		        line-height:1;
-		        font-size: 6rem;
-		     }
+	.about
+		{
+			font-size: 72px;
+		}
+	.resume
+	  	{
+			font-size: .75rem;
+		    width: 46%;
+			h1
+				{
+					font-size:52px;
+				}
+		}
 
-		     h2
-		      {
-		        font-size: 9.25em;
-		      }
-
-		    h3
-		      {
-		        font-size: 5.58rem;
-		      }
-
-		    span
-		      {
-		        font-size: 2.5rem;
-		        font-style: italic;
-		      }
-		  }
-
+	.text-major
+		{
+			border-top: 32px #fff solid;
+			border-bottom: 32px #fff solid;
+			width: 48%;
+			height: 547px;
+		}
 		//show
 	.main
 		{
@@ -623,6 +580,7 @@ and (max-width : 1025px) {
 			display: none;
 			visibility: hidden;
 		}
+
 //about
 		.myself
 			{
@@ -634,32 +592,86 @@ and (max-width : 1025px) {
 				padding: 6rem 1rem 10rem 1rem;
 			}
 	
-		.spending-time
-		  {
+		.about
+			{
+				font-size: 52px;
+			}
 
-		    top: -14rem;
-		    
-		    h1, h2, h3
-		     {
-		        margin:0;
-		        line-height:1;
-		        font-size: 5rem;
-		     }
+		.resume
+		  	{
 
-		     h2
-		      {
-		        font-size: 7.7rem;
-		      }
+			    top: 72px;
+				left: 72px;
 
-		    h3
-		      {
-		        font-size: 4.66rem;
-		      }
+				h1
+					{
+						font-size:42px;
+					}
+				h3
+					{
+						margin-top: 72px;
+						margin-bottom: 72px;
 
-		    span
-		      {
-		        font-size: 2rem;
-		        font-style: italic;
-		      }
-		  }
+					}
+				.edu
+					{
+						padding: 0 136px 0 0;
+					}
+			}
+
+		.text-major
+			{
+				border-top: 32px #fff solid;
+				border-bottom: 32px #fff solid;
+				width: 48%;
+				height: 397px;
+			}
 }
+
+@media only screen 
+and (max-width : 800px){
+	.full
+		{
+			height: auto;
+		}
+	.about
+			{
+				font-size: 28px;
+			}
+
+		.resume
+		  	{
+				width:100%;
+			    top: 0;
+				left: 0;
+				padding: 36px;
+				position: relative;
+				
+				h1
+					{
+						font-size:42px;
+					}
+				h3
+					{
+						margin-top: 72px;
+						margin-bottom: 72px;
+
+					}
+				.edu
+					{
+						padding: 0 0px 0 0;
+					}
+
+			}
+
+		.text-major {
+			border-top: 16px #fff solid;
+			border-bottom: 16px #fff solid;
+			width: 35%;
+			height: 213px;
+			span 
+				{
+					font-size: 2rem;
+				}
+		}
+	}
