@@ -146,19 +146,34 @@
 		z-index: 201;
 		display: none;
 		visibility: hidden;
+		-webkit-transition: background-color  ease-in .2s;
+	    -moz-transition: background-color  ease-in .2s;
+	    -o-transition: background-color  ease-in .2s;
+	    transition: background-color  ease-in .2s;
+	    cursor: pointer;
+	
+		&:hover
+			{
+				background: $red;
+			}
 
 		&:after
 			{
 				position: absolute;
-				font-family: "Lucida Sans Unicode";
+				background: url(close.png) center center;
 				right: 0;
 				top:0;
-				content: "×";
+				content: "";
 				width: 100px;
 				height: 100px;
 				color: #fff;
 				font-size: 90px;
 				text-align: center;
+
+			&:hover
+				{
+
+				}
 			}
 
 		&.on 

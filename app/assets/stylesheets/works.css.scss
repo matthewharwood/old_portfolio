@@ -192,6 +192,60 @@
 		}
 
 	}
+.mobile-nav
+	{
+		top:50%;
+		z-index:100;
+		margin-top:-4.5rem;
+		ul
+			{
+				display: inline-block;
+				width:100%;
+				padding: 0;
+				height:4.5rem;
+
+			}
+
+		li
+			{
+				display: inline-block;
+				height:4.5rem;
+				width: 4.5rem;
+				background: $black;
+				cursor: pointer;
+				color: #fff;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-style: italic;
+				line-height: 4.5rem;
+
+			&:hover
+				{
+					text-decoration: underline;
+				}
+
+			&:active
+				{
+					margin-top:2px;
+					text-decoration: underline;
+				}
+			}
+
+		.prev-btn
+			{
+				float: left;	
+				padding-left: 1rem;
+
+			}
+
+		.next-btn
+			{
+				float: right;
+				padding-right: 1rem;
+				text-align: right;
+			}
+
+	}
 
 
 

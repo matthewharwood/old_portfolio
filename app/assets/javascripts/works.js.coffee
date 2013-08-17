@@ -9,8 +9,10 @@ menyFirstId = " "
 featuredImgElement = " "
 
 window.onload = ->
+	
 	menyFirst = $('.meny-control li:first-child')
 	menyFirstId = menyFirst.data("id")
+	
 
 	#for starting preview window
 	featuredTitleWrapper = $(".featured-info h1")
@@ -54,6 +56,20 @@ $(document).ready ->
 	featuredpost = " "
 	#end of ajax returned vars
 
+	#meny controls
+	menyLi = $(".meny-control > li")
+	menyLiActive = $(".meny-control > li.active")
+	menyLength = $(menyLi).length
+	prevBtn = $(".prev-btn")
+	nextBtn = $(".next-btn")
+	activeIndex = $("ol li.active").index()
+
+	#get actives position
+	$(nextBtn).on "click", (event) ->
+		#if activePos = menyLi
+		console.log activeIndex
+
+	#toggle the active class
 	toggleActive = (root, activeSwitch) ->
 		$(root).find(".active").removeClass "active"
 		$(activeSwitch).toggleClass "active"
