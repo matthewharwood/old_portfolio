@@ -486,6 +486,17 @@ and (max-width : 1025px) {
 			width:100%;
 		}
 
+	.desktop-nav
+		{
+			display: none;
+			visibility: hidden;
+		}
+
+	.mobile-nav
+		{
+			display: block;
+			visibility: visible;
+		}
 	
 
 

@@ -150,7 +150,7 @@
 .featured-info
 	{
 		position: absolute;
-		bottom: 4.5rem;
+		bottom: 5.5rem;
 		background: $black;
 		color: #fff;
 		font-style: italic;
@@ -164,7 +164,7 @@
 		{
 			font-size: 6.875rem;
 			margin: 0;
-			text-transform: capitalize;
+			
 			min-width: 100%;
 		}
 	p
@@ -189,48 +189,136 @@
 			font-weight: 700;
 			text-decoration: none;
 			font-size: 1.5rem;
+
+		&:hover
+			{
+				text-decoration: underline;
+			}
+
+		&:active
+			{
+				margin-top:2px;
+				background: darken($red, 5%);
+			}
 		}
 
 	}
-.mobile-nav
+
+.desktop-nav
 	{
-		top:50%;
-		z-index:100;
-		margin-top:-4.5rem;
-		ul
+
+	& *
+		{
+			margin:0;
+		}
+
+		.desktop-controls
 			{
 				display: inline-block;
-				width:100%;
 				padding: 0;
-				height:4.5rem;
-
+				height: 2.65rem;
+				position: absolute;
+				left: 4.5rem;
+				bottom: 2.5rem;
+				margin: 0;
 			}
 
 		li
-			{
+			{			
+			&:hover
+				{
+					background:$red;
+				}
+
+			&:active
+				{
+					background:darken($red, 10%);
+				}
+
 				display: inline-block;
-				height:4.5rem;
-				width: 4.5rem;
+				height:2.5rem;
+				width: 2.5rem;
 				background: $black;
 				cursor: pointer;
 				color: #fff;
 				font-weight: 700;
 				text-transform: uppercase;
 				font-style: italic;
-				line-height: 4.5rem;
+				line-height: 2.25rem;
+				font-family: oswald;
+				font-style: normal;
 
-			&:hover
-				{
-					text-decoration: underline;
-				}
-
-			&:active
-				{
-					margin-top:2px;
-					text-decoration: underline;
-				}
 			}
 
+		.prev-btn
+			{				
+				padding-left: .95rem;
+				z-index: 100;
+				top:2px;
+				left: 2px;
+				margin-left: 1px;
+
+			}
+
+		.next-btn
+			{
+				padding-left: .95rem;
+				top:2px;
+				z-index:100;
+
+			}
+
+		.project-number
+			{
+			&:hover
+				{
+					background: none;
+				}
+
+				width: 174px;
+				position: absolute;
+				top: 0;
+				height:2.75rem;
+				z-index: 99;
+				text-align: right;
+				padding-right: 1.5rem;
+				background: transparent;
+				border: #fff solid 1px;
+				line-height: 2.75rem;
+				cursor: default;
+			}
+
+		//end of desktop-nav	
+		margin: 0;
+		height: 100%;
+	}
+.desktop-display
+	{
+		height: 100%;
+		padding: 7.5rem 4.5rem 2.5rem;
+		ul
+			{
+				height:100%;
+				border-left: 1px #fff solid;
+			}
+		li
+			{
+				background: none;
+				width: 100%;
+				height: 50%;
+			&:hover
+				{
+					background: none;
+				}
+			}
+		svg
+			{
+				left:0;
+			}
+	}
+
+.mobile-nav
+	{
 		.prev-btn
 			{
 				float: left;	
@@ -245,6 +333,46 @@
 				text-align: right;
 			}
 
+		ul
+			{
+				display: inline-block;
+				width:100%;
+				padding: 0;
+				height:4.5rem;
+
+			}
+
+		li
+			{
+			&:hover
+				{
+					text-decoration: underline;
+				}
+
+			&:active
+				{
+					margin-top:2px;
+					text-decoration: underline;
+				}
+				//end of mobile-nav li
+				display: inline-block;
+				height:4.5rem;
+				width: 4.5rem;
+				background: $black;
+				cursor: pointer;
+				color: #fff;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-style: italic;
+				line-height: 4.5rem;
+			}
+
+		//end of mobile-nav
+		display:none;
+		visibility: hidden;
+		top:50%;
+		z-index:100;
+		margin-top: -4.5rem;
 	}
 
 

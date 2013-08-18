@@ -25,7 +25,7 @@ window.onload = ->
 
 	featuredImgElement.hide().fadeIn(1500)
 	#adds active styles to first list-item in meny
-	$(menyFirst).trigger('click.grabId').addClass('active');
+	$(menyFirst).trigger('click.grabId').addClass('active')
 	featuredImgWrapper = $(".featured-img")
 	#init ajax call to set default frame
 
@@ -62,12 +62,29 @@ $(document).ready ->
 	menyLength = $(menyLi).length
 	prevBtn = $(".prev-btn")
 	nextBtn = $(".next-btn")
-	activeIndex = $("ol li.active").index()
+	activeIndex = 0
+	console.log activeIndex
 
 	#get actives position
-	$(nextBtn).on "click", (event) ->
-		#if activePos = menyLi
-		console.log activeIndex
+	$(nextBtn).on "click", (event) ->			
+		activeIndex = $(".meny-control li.active").index()
+		if activeIndex < menyLength-1
+			$(menyLi).eq(activeIndex).next().trigger('click.grabId')
+			$(menyLi).eq(activeIndex).removeClass("active").next().addClass "active"
+			console.log activeIndex
+		else 
+			$(menyLi).eq(activeIndex).removeClass("active")
+			$(menyFirst).trigger('click.grabId')
+
+	$(prevBtn).on "click", (event) ->			
+		activeIndex = $(".meny-control li.active").index()
+		if activeIndex != 0
+			$(menyLi).eq(activeIndex).prev().trigger('click.grabId')
+			$(menyLi).eq(activeIndex).removeClass("active").prev().addClass "active"
+			console.log activeIndex
+		else 
+			$(menyFirst).removeClass("active")
+			$(menyLi).eq(menyLength-1).trigger('click.grabId').addClass('active')
 
 	#toggle the active class
 	toggleActive = (root, activeSwitch) ->
