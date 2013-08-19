@@ -590,7 +590,7 @@ and (max-width : 1025px) {
 			{
 				padding: 6rem 1rem 10rem 1rem;
 			}
-	
+		
 		.about
 			{
 				font-size: 52px;
@@ -628,13 +628,18 @@ and (max-width : 1025px) {
 						padding: 0 136px 0 0;
 					}
 			}
-
+	
 		.text-major
 			{
 				border-top: 32px #fff solid;
 				border-bottom: 32px #fff solid;
 				width: 48%;
 				height: 397px;
+			}
+		.halfbleed
+			{
+				display: none;
+				visibility: none;
 			}
 }
 
@@ -765,6 +770,12 @@ and (max-width : 500px), (max-height: 480px) {
 			width: 213px;
 			height: 213px;
 			margin: 20% 0;
+		}
+	.post figcaption
+		{
+			font-size: .875rem;
+			margin:0;
+			padding:0;
 		}
 
 	}
