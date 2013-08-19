@@ -234,7 +234,7 @@ and (max-width : 1281px) {
 			{
 				font-size: 3rem;
 				margin: 0;
-				text-transform: capitalize;
+				
 			}
 		p
 			{
@@ -385,18 +385,6 @@ and (max-width : 1025px) {
 			min-height: 480px;
 		}
 
-	.intro, .myself, .reverse
-		{
-
-
-		h1, h2, h3
-			{
-				
-				font-size: 3rem; //48px
-				
-			}
-
-		}
 
 	.intro-control
 		{
@@ -607,7 +595,18 @@ and (max-width : 1025px) {
 			{
 				font-size: 52px;
 			}
+		.intro, .myself, .reverse
+			{
 
+
+			h1, h2, h3
+				{
+					
+					font-size: 3rem; //48px
+					
+				}
+
+			}
 		.resume
 		  	{
 
@@ -640,7 +639,10 @@ and (max-width : 1025px) {
 }
 
 @media only screen 
-and (max-width : 800px){
+and (max-width : 800px) {
+
+
+
 	.full
 		{
 			height: auto;
@@ -685,4 +687,84 @@ and (max-width : 800px){
 					font-size: 2rem;
 				}
 		}
+	}
+@media only screen 
+and (max-width : 500px), (max-height: 480px) {
+	body
+		{
+			height: auto;
+			padding-bottom: 4.5rem;
+		}
+	
+	.meny
+		{
+			display: block;
+			visibility: visible;
+			width: 100%;
+			text-align: center;
+
+			h2:after {
+
+				left: 50%;
+				margin-left: -1.5rem;
+			}
+
+			.meny-control li
+				{
+					padding-left: 0;
+				}
+				
+			& .desktop
+				{
+					display: none;
+					visibility: hidden;
+				}
+			& .mobile
+				{
+					display: block;
+					visibility: visible;
+				}
+		}
+	.preview
+		{
+			display: none;
+			visibility: hidden;
+		}
+
+	//show
+		.main
+			{
+				border: none;
+
+				header
+					{
+						padding: 0;
+					}
+				.post
+					{
+						padding: 2.25rem 0;
+					}
+			}
+
+	//about
+	.intro, .myself, .reverse
+			{
+
+
+			h1, h2, h3
+				{
+					
+					font-size: 2rem; //48px
+					
+				}
+
+			}
+
+	.text-major
+		{
+			width: 213px;
+			height: 213px;
+			margin: 20% 0;
+		}
+
 	}

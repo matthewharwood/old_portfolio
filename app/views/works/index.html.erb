@@ -18,11 +18,16 @@
 
     <h1>Works</h1>
     <h2>Check out some of my work</h2>
-    <ol class="meny-control"> 
+    <ol class="meny-control desktop"> 
       <% @works.each do |work| %>
         
           <li class="" data-id="<%= work.id %>"><a href="#"><%= work.name %></a></li>
 
+      <% end %>
+    </ol>
+    <ol class="meny-control mobile"> 
+      <% @works.each do |work| %>
+          <li class="" data-id="<%= work.id %>"><%= link_to "#{work.name}", work %></li>
       <% end %>
     </ol>
   </nav>
@@ -36,7 +41,7 @@
     <figure class="featured-img">
       
     </figure>
-
+    <!--
     <nav class="desktop-nav">
       <div class="desktop-display">
         <ul>
@@ -57,7 +62,7 @@
       </ul> 
       
     </nav>
-
+    -->
     <header class="featured-info">
       <h1 class="animated"></h1>
       <p class="animated"></p>      
