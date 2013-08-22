@@ -14,6 +14,7 @@ window.onload = ->
 	menyFirstId = menyFirst.data("id")
 	
 	$(".person h5:empty").parent().remove();
+	$(".client li:empty").parent().parent().remove();
 	#for starting preview window
 	featuredTitleWrapper = $(".featured-info h1")
 	featuredImgElement = $(".featured-img img")
