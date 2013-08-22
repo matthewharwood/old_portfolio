@@ -47,6 +47,7 @@ $(document).ready ->
 	innerModalTitle = $(".modal-info h1")
 	innerModalSubtitle = $(".modal-info h2")
 	innerModalpost = $(".post")
+	innerModalSidebar = $(".sidebar")
 	#end of selectors
 
 	#ajax returned vars
@@ -54,6 +55,7 @@ $(document).ready ->
 	featuredTitle = " "
 	featuredSubtitle = " "
 	featuredpost = " "
+	featuredSidebar = " "
 	#end of ajax returned vars
 
 	#meny controls
@@ -102,7 +104,7 @@ $(document).ready ->
 		$(innerModalTitle).text(featuredTitle)
 		$(innerModalSubtitle).text(featuredSubtitle)
 		$(innerModalpost).html(featuredpost)
-
+		$(innerModalSidebar).html(featuredSidebar)
 	
 	closeModal = () ->
 		#closes the bg and panel of modal
@@ -172,6 +174,7 @@ $(document).ready ->
 	    featuredTitle = $(data).find('.modal-info h1').html()
 	    featuredSubtitle = $(data).find('.modal-info h2').html()
 	    featuredpost = $(data).find('.post').html()
+	    featuredSidebar = $(data).find('.sidebar').html()
 
 	    #posts to preview window
 	    $(featuredImgWrapper).hide().html(featuredImg).fadeIn(1500)
