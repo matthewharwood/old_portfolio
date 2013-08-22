@@ -18,6 +18,62 @@
       	</div>
 	    <aside class="sidebar">
 
+		    <section class="dates">
+				<div class="line-header"><h3>dates</h3><span class="line"></div>
+				<ul>
+					<li><span>start</span><%= @work.startdate %></li>
+					<li><span class="end">end</span><%= @work.stopdate %></li>
+				</ul>
+			</section>
+
+		    <section class="contributions">
+				<div class="line-header"><h3>contributions</h3><span class="line"></div>
+				<h4>names:</h4>
+				<div class="person">
+					<h5><%= @work.personA %></h5>				
+				</div>
+				<div class="person">
+					<h5><%= @work.personB %></h5>
+				</div>
+				<div class="person">
+					<h5><%= @work.personC %></h5>
+				</div>
+				<div class="person">
+					<h5><%= @work.personD %></h5>
+				</div>
+				<div class="person">
+					<h5><%= @work.personE %></h5>
+				</div>
+				<div class="person">
+					<h5><%= @work.personF %></h5>
+				</div>
+			</section>
+
+			 <section class="purpose">
+				<div class="line-header"><h3>client</h3><span class="line"></div>
+				<h4>Establishment:</h4>
+				<ul class="establishment">
+					<li><%= @work.department %></li> 
+					<li><%= @work.details %></li>
+				</ul>
+				<h4>client:</h4>
+				<ul class="client">
+					<li><%= @work.teacher %></li>
+					<li><%= @work.assistant %></li>
+				</ul>
+			</section>
+			<!--
+			<section class="documentation">
+				<div class="line-header"><h3>documentation</h3><span class="line"></div>
+				<ul>
+					<li>Ever</li> 
+					<li>Pin</li>
+					<li>drive</li>
+					<li>trello</li>
+					<li>github</li>
+				</ul>
+			</section>
+		-->
 	    </aside>
 	</div>
 </article>
