@@ -2,13 +2,13 @@
 .about
   {
     height: 100%;
-    background: url("http://placekitten.com/g/1900/1200") center center;
+    background: url("coffee.JPG") center center;
     background-attachment:fixed;
     background-size: cover;
     font-size: 110px;
     font-family: Oswald;
     
-
+    
     
   }
 
@@ -53,12 +53,21 @@
     font-size: 1rem;
     width: 38%;
     z-index: 9999;
-    
+    color: #333;
+
+    h2, h5 
+      {
+        background: #fff;
+        display: inline;
+
+      
+      }
     h1
       {
         font-size: 72px;
         margin: 0;
         line-height: 1;
+        color:#fff;
       }
 
     h2
@@ -79,10 +88,9 @@
 
     h3
       {
-        margin-top: 120px;
-        margin-bottom: 72px;
+        margin-top: 72px 0;
         font-size: 24px;
-
+        color:#fff;
         &:before
           {
             content: " ";
@@ -90,7 +98,7 @@
             left: 0;
             width: 36px;
             height: 1px;
-            background: $black;
+            background: #fff;
             position: absolute;
           }
       }
@@ -99,13 +107,12 @@
       {
         font-size:16px;
         margin: 4px 0;
+        color:#fff;
       }
 
     h5
       {
         font-size: 16px;
-        color: #fff;
-        margin: 4px 0;
       }
 
     p
@@ -113,31 +120,57 @@
         text-align: justify;
         padding-right: 24px;
         margin-bottom: 72px;
+        color:#fff;
+      }
+    .past-exp
+      {
+        margin-top: 72px;
+      }
+    .work-exp
+      {
+        
       }
     .edu
       {
-        padding: 0 172px 0 0;
-
-        .red
+        margin-top: 36px;
+        h1, h2, h4,p 
           {
-            color:$red;
-            background:#fff;
-            display:inline-block;
+            background: #fff;
+            display: inline;
+            color:#333;
+          
+          }
+        h5
+          {
+            background: $red;
+            display: inline;
+            color:#fff;
           }
       }
-
+    .edu-exp
+      {
+        margin-top:72px;
+      }
+    .pop16
+      {
+        margin-top: 16px;
+      }
+    .pop4
+      {
+        margin-top: 4px;
+      }
   }
 
 .redbleed
   {
-    background: $red;
+    background: $black;
     z-index: 102;
   }
 
 .halfbleed
   {
     background: 
-            linear-gradient(31deg, #fff 50%, $red 50%) no-repeat  0 0;
+            linear-gradient(31deg, #fff 50%, $black 50%) no-repeat  0 0;
             z-index: 101;
   }
 
@@ -145,13 +178,14 @@
   {
     background: #fff;
     z-index: 100;
+    padding: 10% 0;
   }
 
 .myself
 	{
 		padding: 6rem;
 
-		h1,h2,h3{font-family: 'Merriweather', serif; margin: 0; font-size: 4.5rem; color: $red;}
+		h1,h2,h3{font-family: 'Merriweather', serif; margin: 0; font-size: 4.5rem; color: $black;}
 	}
 
   .reverse
@@ -190,7 +224,7 @@
 .hover-spell
   {
     cursor: pointer;
-    border-bottom: 1px dotted $red;
+    border-bottom: 1px dotted $black;
     transition: all 0.5s ease;
   }
 
@@ -200,3 +234,7 @@
     unicode-bidi: bidi-override;
   }
 
+.form-textbox
+      {
+        width: 100% !important;
+      }

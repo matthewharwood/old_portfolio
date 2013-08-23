@@ -29,7 +29,6 @@ window.onload = ->
 	$(menyFirst).trigger('click.grabId').addClass('active')
 	featuredImgWrapper = $(".featured-img")
 	#init ajax call to set default frame
-
 	
 	#adds the first list-item id to enter button
 	#$(enter).data("id")
@@ -184,7 +183,7 @@ $(document).ready ->
 
     	
 
-
+	$('.form-textbox').hide();
 	    #console.log featuredImg
 #about
 	timer = $(".countdown")
